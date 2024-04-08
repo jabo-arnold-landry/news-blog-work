@@ -1,0 +1,46 @@
+.grids{
+    display: grid;
+    gap: 3%;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    ;
+
+    grid-template-areas:
+    "one one two five"
+    "three four four five"
+   ;
+}
+/* .grid-span{
+    grid-column: span 2;
+} */
+.grid1{
+    grid-area: one;
+}
+.grid2{
+    grid-area: two;
+}
+.grid3{
+    grid-area: three;
+}
+.grid4{
+    grid-area: four;
+}
+.grid5{
+    grid-area: five;
+    background-color: aqua;
+}
+
+p{
+    border:1px solid black;
+    width: 90%;
+    min-width: 45%;
+    padding:10px;
+}
+
+/* @media(min-width:400px) and (max-width:500px){
+    
+} */
