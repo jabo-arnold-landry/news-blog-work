@@ -1,46 +1,138 @@
-.grids{
+body{
+    margin: 20px  150px;
+}
+h1{
+    font-size: 45px;
+    font-style: bold;
+}
+.links{
+    float: right;
+    margin-top: -45px;
+    margin-right: 45px;
+    display: flex;
+    gap: 23px;
+}
+.links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}
+.body{
     display: grid;
-    gap: 3%;
-    grid-template-areas: 
-    "one"
-    "two"
-    "three"
-    "four"
-    "five"
-    ;
-
     grid-template-areas:
-    "one one two five"
-    "three four four five"
-   ;
+    "image"
+    "heading"
+    "text"
+    "card"
+    ;
+    gap: 15px;
+    grid-template-areas:
+    "image image card"
+    "heading text card"
+    ;
 }
-/* .grid-span{
-    grid-column: span 2;
-} */
-.grid1{
-    grid-area: one;
-}
-.grid2{
-    grid-area: two;
-}
-.grid3{
-    grid-area: three;
-}
-.grid4{
-    grid-area: four;
-}
-.grid5{
-    grid-area: five;
-    background-color: aqua;
+img{
+    grid-area: image;
+    height: 200px;
+    width: 100%;
 }
 
-p{
-    border:1px solid black;
-    width: 90%;
-    min-width: 45%;
-    padding:10px;
+.b-text{
+    grid-area: heading;
+    text-transform: capitalize;
+    font-style: bold;
+    font-family: 23px;
+    font-family:sans-serif;
+    line-height: 3px;
+    font-stretch: expanded;
 }
 
-/* @media(min-width:400px) and (max-width:500px){
-    
-} */
+.text{
+    grid-area: text;
+}
+.text p{
+    color: gray;
+    font-size: 10px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-size: 10px;
+    word-break: break-all;
+}
+
+.text button{
+    background-color:rgb(248, 125, 125) ;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    width: 30%;
+    font-size: 9px;
+    cursor: pointer;
+}
+.card{
+    grid-area: card;
+    background-color: rgb(6, 6, 8);
+    color: whitesmoke;
+    padding:4px 25px;
+    width: 80%;
+}
+
+.card h1{
+    color: rgb(207, 145, 29);
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.card h3{
+    text-transform: capitalize;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 2px;
+}
+.card p{
+    color: rgb(173, 168, 168);
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.card .line{
+    border-bottom: 1px solid  rgb(171, 167, 167);
+    opacity: 0.3;
+}
+.tail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.tail img{
+    width: 10%;
+    height: 90px;
+}
+
+.tail span{
+    font-size: 35px;
+    font-family: sans-serif;
+    color: rgb(128, 126, 126);
+    margin-left: 5px;
+}
+
+.tail .contents{
+ margin-left: -90px;
+ margin-top: 23px;
+}
+.tail h2{
+   font-size: 14px;
+   font-weight: 600;
+   font-family: sans-serif;
+   line-height: 12px;
+   text-transform: capitalize;
+}
+
+.tail p{
+    font-family: sans-serif;
+    font-size: 10px;
+    color: gray;
+}
