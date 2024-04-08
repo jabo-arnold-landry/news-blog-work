@@ -104,24 +104,25 @@ img{
 }
 .tail{
     display: flex;
+    gap:-2px;
     justify-content: space-between;
     margin-top: 5%;
 }
 .tail img{
-    width: 10%;
+    width: 7%;
     height: 90px;
 }
-
 .tail span{
-    font-size: 35px;
+    font-size: 20px;
     font-family: sans-serif;
     color: rgb(128, 126, 126);
-    margin-left: 5px;
+    margin-left: -16%;
 }
 
 .tail .contents{
- margin-left: -90px;
- margin-top: 23px;
+    position: relative;
+    top: 20px;
+    left: -185px;
 }
 .tail h2{
    font-size: 14px;
@@ -135,4 +136,5 @@ img{
     font-family: sans-serif;
     font-size: 10px;
     color: gray;
+    margin-top: -5px;
 }
