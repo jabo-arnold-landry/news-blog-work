@@ -171,7 +171,7 @@ img{
     margin-top: -5px;
 }
 
-@media (min-width:320px) and (max-width:414px){
+@media (min-width:200px) and (max-width:414px){
     body{
         margin: 20px  12px;
     }
@@ -237,5 +237,154 @@ img{
     }
     .tail h2:hover{
         color: none;
+    }
+}
+
+@media (min-width:415px) and (max-width:600px){
+    body{
+        margin: 20px  12px;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        position: fixed;
+        left: 65%;
+        top: 9%;
+        background-color: white;
+        width: 45%;
+        height: 100vh;
+        padding: 70px 20px;
+        z-index: 1;
+        transform: scale(0);
+    }
+    .body{
+        display: grid;
+        grid-template-areas:
+        "image"
+        "heading"
+        "text"
+        "card"
+        ;
+        gap: 15px;
+        grid-template-areas:
+        "image image"
+        "heading text card"
+        ;
+    }
+    .text button:hover{
+        background-color: none;
+    }
+    .card h3{
+        line-height: 15px;
+        font-size: 15px;
+    }
+    .tail{
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 15%;
+    }
+
+    .tail img{
+        width: 18%;
+        margin-left: 0px;
+    }
+
+    .tail span{
+        margin-left: 10%;
+        margin-top: -28%;
+    }
+
+    .tail .contents{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .tail h2:hover{
+        color: none;
+    }
+}
+
+@media (min-width:601px) and (max-width:768px){
+    body{
+        margin: 20px  12px;
+       
+    }
+    .links{
+        margin-right: 75px;
+}
+.body{
+    display: grid;
+    grid-template-areas:
+    "image"
+    "heading"
+    "text"
+    "card"
+    ;
+    gap: 10px;
+    grid-template-areas:
+    "image image card"
+    "heading text card"
+    ;
+}
+.text button{
+    width: 45%;
+}
+.text button:hover{
+    background-color: none;
+}
+.card{
+    width: 55%;
+}
+.card h3{
+    line-height: 15px;
+    font-size: 15px;
+}
+.tail img{
+    height: 70px;
+}
+.tail span{
+    margin-left: -20%;
+}
+.tail .contents{
+    left: -66px;
+}
+}
+
+@media (min-width:768px) {
+    body{
+        margin: 20px  90px;
+    }
+    .text p{
+        line-height: 10px;
+        font-size: 8px;
+    }
+    .text button{
+        width: 50%;
+    }
+    .text button:hover{
+        background-color: none;
+    }
+
+    .card h3{
+        line-height: 15px;
+        font-size: 15px;
+    } 
+    .tail{
+        gap: 20px;
+    }
+    .tail img{
+        width: 8%;
+        height: 80px;
+    }
+    .tail span{
+        margin-left: -15%;
+    }
+    .tail .contents{
+        top: 10px;
+        left: -50px;
     }
 }
