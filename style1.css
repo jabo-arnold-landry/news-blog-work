@@ -17,7 +17,7 @@ h1{
     text-transform: capitalize;
     font-size: 14px;
     font-family: sans-serif;
-    color: grey;
+    color: black;
 }
 .body{
     display: grid;
