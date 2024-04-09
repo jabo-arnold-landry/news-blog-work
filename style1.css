@@ -354,7 +354,7 @@ img{
 }
 }
 
-@media (min-width:768px)  and (max-width:990){
+@media (min-width:768px)  and (max-width:990px){
     body{
         margin: 20px  90px;
     }
