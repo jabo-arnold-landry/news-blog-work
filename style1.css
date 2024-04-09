@@ -1,5 +1,6 @@
 body{
     margin: 20px  150px;
+    user-select: none;
 }
 h1{
     font-size: 45px;
@@ -22,6 +23,9 @@ h1{
     height: 5px;
     background-color: black;
     border-radius: 12px;
+}
+.links span{
+    display: none;
 }
 .links{
     float: right;
@@ -79,7 +83,7 @@ img{
     font-size: 10px;
     line-height: 15px;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     word-break: break-all;
 }
 
@@ -171,12 +175,42 @@ img{
     margin-top: -5px;
 }
 
-@media (min-width:200px) and (max-width:414px){
+@media (min-width:100px) and (max-width:414px){
     body{
         margin: 20px  12px;
     }
+    .links span{
+        display: flex;
+        border: none;
+        width: 23px;
+        padding: 4px;
+        margin-left: 40px;
+        margin-top: 3px;
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: sans-serif;
+        color: grey;
+        cursor: pointer;
+    }
     .menu-icon{
         display: flex;
+        cursor: pointer;
+    }
+    .overlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        pointer-events: none;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 2;
+        transform: scale(0);
+    }
+    .hide{
+        pointer-events: all;
+        transform: scale(1);
     }
     .links{
         display: flex;
@@ -184,13 +218,16 @@ img{
         gap: 23px;
         position: fixed;
         left: 65%;
-        top: 9%;
+        top: 6%;
         background-color: white;
         width: 45%;
         height: 100vh;
         padding: 70px 20px;
-        z-index: 1;
+        z-index: 10;
         transform: scale(0);
+    }
+     .show{
+        transform: scale(1);
     }
     .body{
         display: grid;
@@ -244,8 +281,38 @@ img{
     body{
         margin: 20px  12px;
     }
+    .links span{
+        display: flex;
+        border: none;
+        width: 23px;
+        padding: 4px;
+        margin-left: 90px;
+        margin-top: 3px;
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: sans-serif;
+        color: grey;
+        cursor: pointer;
+    }
     .menu-icon{
         display: flex;
+        cursor: pointer;
+    }
+    .overlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        pointer-events: none;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 2;
+        transform: scale(0);
+    }
+    .hide{
+        pointer-events: all;
+        transform: scale(1);
     }
     .links{
         display: flex;
@@ -253,13 +320,16 @@ img{
         gap: 23px;
         position: fixed;
         left: 65%;
-        top: 9%;
+        top: 6%;
         background-color: white;
         width: 45%;
         height: 100vh;
         padding: 70px 20px;
-        z-index: 1;
+        z-index: 10;
         transform: scale(0);
+    }
+     .show{
+        transform: scale(1);
     }
     .body{
         display: grid;
@@ -308,7 +378,7 @@ img{
     }
 }
 
-@media (min-width:601px) and (max-width:768px){
+@media (min-width:601px) and (max-width:849px){
     body{
         margin: 20px  12px;
        
@@ -354,13 +424,13 @@ img{
 }
 }
 
-@media (min-width:768px)  and (max-width:990px){
+@media (min-width:850px)  and (max-width:1099px){
     body{
         margin: 20px  90px;
     }
     .text p{
-        line-height: 10px;
-        font-size: 8px;
+        line-height: 20px;
+        font-size: 15px;
     }
     .text button{
         width: 50%;
@@ -381,10 +451,33 @@ img{
         height: 80px;
     }
     .tail span{
-        margin-left: -15%;
+        margin-left: -20%;
     }
     .tail .contents{
-        top: 10px;
-        left: -50px;
+        left:-70px;
+    }
+    .tail p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1100px){
+    body{
+        margin: 20px  50px;
+    }
+    .card h3{
+        font-size: 12px;
+    }
+
+    .tail img{
+        width: 10%;
+        height: 100px;
+    }
+    .tail .contents{
+        left: -140px;
+    }
+
+    .tail p{
+        font-size: 12px;
     }
 }
