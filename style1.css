@@ -604,7 +604,7 @@ img{
     font-size: 16px;
 }
 }
-@media (min-width:900px) and (max-width:1000px){
+@media (min-width:900px) and (max-width:1050px){
     body{
         margin: 20px  50px;
     }
@@ -664,12 +664,12 @@ img{
         font-size: 15px;
     }
 }
-@media (min-width:1000px) and (max-width:1200px){
+@media (min-width:1050px) and (max-width:1200px){
     .links a{
         font-size: 17px;
     }
     .text button{
-        width: 25%;
+        width: 35%;
         padding:10px;
         font-size: 13px;
     }
@@ -679,16 +679,56 @@ img{
     .card p{
         font-size: 15px;
     }
+    .tail{
+        gap: 34px;
+        margin-left: 123px;
+    }
     .tail img{
         width: 10%;
         height: 90px;
     }
     .tail span{
-        margin-left: -20%;
+        margin-left: -18%;
     }
     .tail .contents{
         top: 12px;
-        left:-70px;
+        left:-60px;
+    }
+    .tail p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+    .links a{
+        font-size: 16px;
+    }
+
+    .text button{
+        width: 35%;
+        padding:10px;
+        font-size: 13px;
+    }
+    .card h3{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 15px;
+    }
+    .tail{
+        gap: 40px;
+        margin-left: 123px;
+    }
+    .tail img{
+        width: 10%;
+        height: 90px;
+    }
+    .tail span{
+        margin-left: -18%;
+    }
+    .tail .contents{
+        top: 12px;
+        left:-60px;
     }
     .tail p{
         font-size: 16px;
