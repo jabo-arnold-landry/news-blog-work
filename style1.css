@@ -176,7 +176,7 @@ img{
     margin-top: -5px;
 }
 
-@media (min-width:100px) and (max-width:414px){
+@media (min-width:100px) and (max-width:414px){ 
     body{
         margin: 20px  7px;
     }
@@ -244,8 +244,22 @@ img{
         "heading text card"
         ;
     }
+    .text button{
+        width: 20%;
+        padding: 8px;
+        font-size: 12px;
+    }
+    .card h3{
+        font-size: 25px;
+    }
+    .card p{
+        font-size: 15px;
+    }
     .text button:hover{
         background-color: none;
+    }
+    .card{
+        width: 100%;
     }
     .card h3{
         line-height: 15px;
@@ -272,6 +286,9 @@ img{
         position: relative;
         top: -15px;
         left: 35px;
+    }
+    .tail p{
+        font-size: 15px;
     }
 }
 
@@ -351,6 +368,18 @@ img{
     .text button{
         width: 20%;
         padding: 8px;
+        font-size: 12px;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+    .card h3{
+        font-size: 25px;
+    }
+    .card p{
+        font-size: 15px;
     }
     .tail{
         flex-direction: column;
@@ -372,6 +401,9 @@ img{
         position: relative;
         top: -10px;
         left: 35px;
+    }
+    .tail p{
+        font-size: 15px;
     }
 }
 @media (min-width:500px) and (max-width:600px){
@@ -443,19 +475,28 @@ img{
     }
     .text p{
         line-height: 20px;
-        font-size: 15px;
+        font-size: 17px;
     }
     .text button{
         width: 15%;
-        padding: 8px;
+        padding: 12px;
+        font-size: 12px;
     }
     .text button:hover{
         background-color: none;
     }
+
+    .card{
+        width: 100%;
+    }
+    
     .card h3{
         line-height: 15px;
-        font-size: 15px;
+        font-size: 20px;
     }
+.card p{
+    font-size: 15px;
+}
     .tail{
         flex-direction: column;
         gap: 15px;
@@ -463,7 +504,7 @@ img{
     }
 
     .tail img{
-        width: 20%;
+        width: 18%;
         margin-left: 0px;
     }
 
@@ -479,6 +520,9 @@ img{
     }
     .tail h2:hover{
         color: none;
+    }
+    .tail p{
+        font-size: 14px;
     }
 }
 
@@ -505,12 +549,13 @@ img{
     ;
 }
 .text p{
-    line-height: 20px;
+    line-height: 16px;
     font-size: 15px;
 }
 .text button{
-    width: 30%;
-    padding: 10px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
 }
 .text button:hover{
     background-color: none;
@@ -522,31 +567,30 @@ img{
     line-height: 15px;
     font-size: 15px;
 }
+.card p{
+    font-size: 13px;
+}
 .tail{
-    display: flex;
-    gap:10%;
-    justify-content: space-between;
-    margin-top: 5%;
+    gap: 38px;
     margin-left: 15%;
 }
 .tail img{
-    width: 15%;
-    height: 120px;
+    width: 17%;
+    height: 135px;
 }
 .tail span{
-    margin-left: -23%;
+    margin-left: -20%;
 }
 .tail .contents{
-    left: -70px;
+    top: 12px;
+    left: -60px;
 }
 .tail h2{
-    font-size: 12px;
-    font-weight: 600;
-    font-family: sans-serif;
-    line-height: 12px;
-    text-transform: capitalize;
-    cursor: pointer;
+    font-size: 14px;
  }
+ .tail p{
+    font-size: 13px;
+}
 }
 @media (min-width:721px) and (max-width:899px){
     body{
@@ -560,13 +604,13 @@ img{
     gap: 9px;
 }
 .text p{
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 15px;
+    font-size: 13px;
 }
 .text button{
-    width: 20%;
+    width: 35%;
     padding: 9px;
-    font-size: 10px;
+    font-size: 11px;
 }
 .card{
     width: 60%;
@@ -575,9 +619,12 @@ img{
     line-height: 15px;
     font-size: 15px;
 }
+.card p{
+    font-size: 15px;
+}
 .tail{
     display: flex;
-    gap:10%;
+    gap:7%;
     justify-content: space-between;
     margin-top: 5%;
     margin-left: 14%;
@@ -587,21 +634,17 @@ img{
     height: 100px;
 }
 .tail span{
-    margin-left: -23%;
+    margin-left: -20%;
 }
 .tail .contents{
-    left: -85px;
+    top: 12px;
+    left: -65px;
 }
 .tail h2{
-    font-size: 12px;
-    font-weight: 600;
-    font-family: sans-serif;
-    line-height: 12px;
-    text-transform: capitalize;
-    cursor: pointer;
+    font-size: 14px;
  }
  .tail p{
-    font-size: 16px;
+    font-size: 13px;
 }
 }
 @media (min-width:900px) and (max-width:1050px){
@@ -636,14 +679,149 @@ img{
     }
     .card{
         width: 90%;
+        width:220px;
         padding:-3px 25px;
     }
     .card h3{
-        line-height: -2px;
+        line-height: 14px;
         font-size: 17px;
     } 
     .card p{
         font-size: 15px;
+    }
+    .tail{
+        gap: 50px;
+        margin-left: 123px;
+    }
+    .tail img{
+        width: 10%;
+        height: 90px;
+    }
+    .tail span{
+        margin-left: -18%;
+    }
+    .tail .contents{
+        top: 20px;
+        left:-75px;
+    }
+    .tail p{
+        font-size: 13px;
+    }
+}
+@media (min-width:1050px) and (max-width:1199px){
+    .links a{
+        font-size: 17px;
+    }
+    .text p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .text button{
+        width: 25%;
+        padding:8px;
+        font-size: 13px;
+    }
+    .card{
+        width: 70%;
+        width:220px;
+    }
+    .card h3{
+        line-height: 14px;
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .tail{
+        gap: 45px;
+        margin-left: 123px;
+    }
+    .tail img{
+        width: 10%;
+        height: 100px;
+    }
+    .tail span{
+        margin-left: -18%;
+    }
+    .tail .contents{
+        top: 30px;
+        left:-70px;
+    }
+    .tail p{
+        font-size: 13px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1420px){
+    body{
+        margin: 20px  150px;
+    }
+    .links a{
+        font-size: 17px;
+    }
+    img{
+        height: 256px;
+    }
+    .text p{
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .text button{
+        width: 20%;
+        padding:9px;
+        font-size: 15px;
+    }
+    .card{
+        width: 70%;
+        width:220px;
+    }
+    .card h3{
+        line-height: 14px;
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .tail{
+        gap: 60px;
+        margin-left: 123px;
+    }
+    .tail img{
+        width: 10%;
+        height: 90px;
+    }
+    .tail span{
+        margin-left: -18%;
+    }
+    .tail .contents{
+        top: 12px;
+        left:-90px;
+    }
+    .tail p{
+        font-size: 16px;
+    }
+}
+
+@media(min-width:1420px) and (max-width:1500px){
+    .text p{
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .text button{
+        width: 20%;
+        padding:8px;
+        font-size: 13px;
+    }
+    .card{
+        width: 70%;
+        width:220px;
+    }
+    .card h3{
+        line-height: 14px;
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 14px;
     }
     .tail{
         gap: 30px;
@@ -654,81 +832,11 @@ img{
         height: 90px;
     }
     .tail span{
-        margin-left: -18%;
+        margin-left: -20%;
     }
     .tail .contents{
         top: 12px;
-        left:-60px;
-    }
-    .tail p{
-        font-size: 15px;
-    }
-}
-@media (min-width:1050px) and (max-width:1200px){
-    .links a{
-        font-size: 17px;
-    }
-    .text button{
-        width: 35%;
-        padding:10px;
-        font-size: 13px;
-    }
-    .card h3{
-        font-size: 18px;
-    }
-    .card p{
-        font-size: 15px;
-    }
-    .tail{
-        gap: 34px;
-        margin-left: 123px;
-    }
-    .tail img{
-        width: 10%;
-        height: 90px;
-    }
-    .tail span{
-        margin-left: -18%;
-    }
-    .tail .contents{
-        top: 12px;
-        left:-60px;
-    }
-    .tail p{
-        font-size: 16px;
-    }
-}
-
-@media (min-width:1200px) and (max-width:1400px){
-    .links a{
-        font-size: 16px;
-    }
-
-    .text button{
-        width: 35%;
-        padding:10px;
-        font-size: 13px;
-    }
-    .card h3{
-        font-size: 18px;
-    }
-    .card p{
-        font-size: 15px;
-    }
-    .tail{
-        gap: 40px;
-        margin-left: 123px;
-    }
-    .tail img{
-        width: 10%;
-        height: 90px;
-    }
-    .tail span{
-        margin-left: -18%;
-    }
-    .tail .contents{
-        top: 12px;
-        left:-60px;
+        left:-110px;
     }
     .tail p{
         font-size: 16px;
